@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- <h2>Music application</h2> -->
+    <div class="container">
+        <div class="maincontainer">
+            <div class="play-container">
+                <img alt="image" src="./images/logo_img2.png" class="img" id="img" />
+                <div class="play-button-container">
+                    <!-- <h5>backward</h5> -->
+                    <i class="fa-solid fa-backward" id="prev"></i>
+                    <!-- <h5>play/pause</h5> -->
+                    <i class="fa-solid fa-play main-btn" id="main-btn"></i>
+                    <!-- <i class="fa-solid fa-pause "></i> -->
+
+                    <!-- <h5>forward</h5> -->
+                    <i class="fa-solid fa-forward" id="forw"></i>
+                </div>
+
+            </div>
+
+            <div class="playlist-container">
+                <div class="text">
+                    <!-- <h3>PLAYLIST</h3> -->
+                    <h3>Rajasthani Songs</h3>
+                </div>
+
+                <!-- <h3>Icon</h3> -->
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+
+            <div class="change-button">
+                <!-- <h3>Heart icon</h3> -->
+                <i class="fa-solid fa-heart" id="like-btn"></i>
+                <!-- <h3>Repeat icon</h3> -->
+                <i class="fa-solid fa-repeat" id="icon-btn"></i>
+
+                <!-- <h3>Shuffle icon</h3> -->
+                <!-- <i class="fa-solid fa-shuffle"></i> -->
+
+                <!-- <i class="fa-solid fa-video"></i> -->
+
+            </div>
+
+            <div class="song-name-container">
+                <div class="song-name">
+                    <h3 id="artist_name">artist name</h3>
+                    <h3 id="song_name">song name</h3>
+                </div>
+
+                <img src="./images/play.gif" class="gif" id="gif">
+            </div>
+
+            <!-- <h4 class="lyric">sound bar</h4> -->
+            <div class="audiocl">
+                <audio id="audio-data">
+                    <source src="./songs/old_Rockstar-Nadaan Parindey.mp3" type="audio/mp3">
+
+
+                </audio>
+
+                <div class="timecontainer">
+                    <div class="timecont">
+                        <span id="startime">0.00</span>
+                        <span id="endtime">0.00</span>
+                    </div>
+
+                    <input class="input" type="range" id="input" value="0" max="100" step="1">
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+<script src="./index.js">
+
+</script>
+
+</html>
